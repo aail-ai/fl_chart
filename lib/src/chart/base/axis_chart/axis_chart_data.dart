@@ -1384,6 +1384,7 @@ class FlDotCirclePainter extends FlDotPainter {
     this.strokeColor = const Color.fromRGBO(76, 175, 80, 1),
     this.strokeWidth = 0.0,
     this.labelName = '',
+    this.additionalData = 0,
   }) : radius = radius ?? 4.0;
 
   /// The fill color to use for the circle
@@ -1400,6 +1401,9 @@ class FlDotCirclePainter extends FlDotPainter {
 
   /// label name
   String labelName;
+
+  /// additional info
+  double additionalData;
 
   /// Implementation of the parent class to draw the circle
   @override
